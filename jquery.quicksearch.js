@@ -10,7 +10,7 @@
                 preventSubmit: true,
                 resultTag: 'li',
                 timeout : 500,
-                url : document.location
+                url : document.location.href
             }, options);
             
             return this.each(function(){
