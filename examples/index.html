@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery QuickSearch</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js" ></script>
+        <script type="text/javascript" src="../jquery.quicksearch.js" ></script>
+        <script type="text/javascript" >
+            $(function() {
+                $('#cities-search').quickSearch({
+                    url: 'search.php'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>jQuery QuickSearch</h1>
+        <h2>Cities</h2>
+        <form method="post" >
+            <input type="text" name="search-terms" id="cities-search" />
+        </form>
+    </body>
+</html>
